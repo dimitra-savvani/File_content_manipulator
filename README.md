@@ -1,5 +1,5 @@
 # Shell-Scripting #
-File content manipulation
+## File content manipulation ##
 
 ### Download tool.sh script, and dates.dat and event.dat example datafiles. Run the following commands to have the explained result. ###
 
