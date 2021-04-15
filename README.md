@@ -1,7 +1,7 @@
 # Shell-Scripting #
 File content manipulation
 
-### Download tool.sh script, dates.dat and event.dat example datafiles. Run the following commands to have the explained result. ###
+### Download tool.sh script, and dates.dat and event.dat example datafiles. Run the following commands to have the explained result. ###
 
 * prints Welcome when programm is executed without any parameter
 ```
