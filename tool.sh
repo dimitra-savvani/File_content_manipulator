@@ -3,10 +3,11 @@
 
 
 #./tool.sh
-# print AM when programm is executed without any parameter
+# print welcome message when programm is executed without any parameter
 if [ $# -eq 0 ] #if I have no arguments
 then 
-	echo "1047332-1057603"
+	# echo "1047332-1057603"
+ 	echo "Welcome to the file content manipulator. Please read the README for details on how to use it."
 fi
 
 
