@@ -24,7 +24,8 @@ If you run the script without any parameters, it will print a welcome message:
 Output:
 
 ```
-1047332-1057603
+Welcome to the file content manipulator. Please read the README for details on how to use it.
+
 ```
 
 ### 2. Print Datafile Contents
