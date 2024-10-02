@@ -1,4 +1,4 @@
-# Shell-Scripting: File Content Manipulation
+# File Content Manipulation
 This project contains a Bash script, `tool.sh`, that provides multiple functionalities for interacting with `.dat` files. These files (`dates.dat` and `events.dat`) contain structured data with various fields such as ID, name, birthday, location, and more. This script allows you to view, sort, and manipulate the data in various ways.
 
 ## Getting Started
