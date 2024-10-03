@@ -1,6 +1,25 @@
 # File Content Manipulation
 This project contains a Bash script, `tool.sh`, that provides multiple functionalities for interacting with `.dat` files. These files (`dates.dat` and `events.dat`) contain structured data with various fields such as ID, name, birthday, location, and more. This script allows you to view, sort, and manipulate the data in various ways.
 
+## Table of Contents
+
+1. [File Content Manipulation](#file-content-manipulation)
+2. [Getting Started](#getting-started)
+3. [Available Commands](#available-commands)
+   - [No Parameters: Print Welcome Message](#no-parameters-print-welcome-message)
+   - [Print Datafile Contents](#print-datafile-contents)
+   - [Print Name, Surname, and Birthdate by ID](#print-name-surname-and-birthdate-by-id)
+   - [Print First Names or Last Names Alphabetically](#print-first-names-or-last-names-alphabetically)
+   - [Print Lines for People Born After or Before a Certain Date](#print-lines-for-people-born-after-or-before-a-certain-date)
+     - [Born Since a Specific Date](#born-since-a-specific-date)
+     - [Born Until a Specific Date](#born-until-a-specific-date)
+   - [Print Lines for People Born Between Two Dates](#print-lines-for-people-born-between-two-dates)
+   - [Print Social Media and its Users](#print-social-media-and-its-users)
+   - [Edit a Record: Replace Column Value by ID](#edit-a-record-replace-column-value-by-id)
+4. [Data File Format](#data-file-format)
+5. [Conclusion](#conclusion)
+
+
 ## Getting Started
 Download the `tool.sh` script, along with the example data files `dates.dat` and `events.dat`. Both data files contain records in the following format:
 
@@ -28,7 +47,7 @@ Welcome to the file content manipulator. Please read the README for details on h
 
 ```
 
-### 2. Print Datafile Contents
+### Print Datafile Contents
 To display the contents of a specific data file (e.g., `dates.dat` or `events.dat`), use the `-f` option:
 
 ```bash
@@ -43,7 +62,7 @@ Example:
 ```
 This command will print all lines from the file, excluding any lines that are comments (starting with `#`).
 
-### 3. Print Name, Surname, and Birthdate by ID
+### Print Name, Surname, and Birthdate by ID
 To retrieve specific user information based on their ID, use the `-id` flag along with the `-f` option:
 
 ```bash
@@ -59,7 +78,7 @@ Example:
 ./tool.sh -f dates.dat -id 1099511627782
 ```
 
-### 4. Print First Names or Last Names Alphabetically
+### Print First Names or Last Names Alphabetically
 To list all unique first names or last names in alphabetical order, use either `--firstnames` or `--lastnames` followed by the `-f` option:
 
 ```bash
@@ -79,7 +98,7 @@ Example:
 ```
 This command will sort and print all first names or last names (depending on the flag you use) alphabetically from the specified file.
 
-### 5. Print Lines for People Born After or Before a Certain Date
+### Print Lines for People Born After or Before a Certain Date
 To retrieve users based on their birthdates, use the following commands:
 
 #### Born Since a Specific Date:
@@ -101,7 +120,7 @@ Example:
 ./tool.sh --born-since 1980-01-01 -f dates.dat
 ```
 
-### 6. Print Lines for People Born Between Two Dates
+### Print Lines for People Born Between Two Dates
 To print the records of people born between two dates (inclusive), use the following command:
 
 ```bash
@@ -117,7 +136,7 @@ Example:
 ./tool.sh --born-since 1980-01-01 --born-until 1990-12-31 -f events.dat
 ```
 
-### 7. Print Social Media and its Users
+### Print Social Media and its Users
 To print a list of social media platforms along with the number of users for each platform, use the following command:
 
 ```bash
@@ -132,7 +151,7 @@ Example:
 ./tool.sh --socialmedia -f dates.dat
 ```
 
-### 8. Edit a Record: Replace Column Value by ID
+### Edit a Record: Replace Column Value by ID
 You can modify specific fields in a record by providing the user ID, the column number, and the new value:
 
 ```bash
